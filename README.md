@@ -27,14 +27,6 @@ Each contract demonstrates a core concept in Ethereum smart contract development
 
 ---
 
-## 📌 Next Steps
-
-- [ ] Build a simple frontend (React + Ethers.js) to interact with these contracts.
-- [ ] Deploy contracts on a testnet (e.g., Goerli or Sepolia) for live testing.
-- [ ] Add more advanced contracts such as ERC20/ERC721 tokens.
-
----
-
 ## 📜 License
 
 This project is licensed under the **MIT License**.
