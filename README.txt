@@ -1,28 +1,59 @@
-# REMIX Blockchain WORKSPACE
+# Blockchain Solidity Projects
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+This repository contains Solidity smart contracts I built during a 4-day Blockchain workshop.  
+Each contract demonstrates a core concept in Ethereum smart contract development.
 
-This workspace contains 3 directories:
+---
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+## 🚀 Smart Contracts
 
-SCRIPTS
+### 1. HelloWorld.sol
+- The simplest Solidity contract.
+- Stores and retrieves a "Hello, World!" message.
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+### 2. Counter.sol
+- Implements a counter with `increment`, `decrement`, and `reset` functions.
+- Demonstrates state changes and basic function usage.
 
-For the deployment of any other contract, just update the contract name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+### 3. EventCounter.sol
+- Extends the Counter contract by adding **events**.
+- Logs every increment, decrement, and reset on the blockchain.
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+### 4. SimpleStorage.sol
+- Stores and retrieves a single number.
+- Demonstrates persistent storage on the blockchain.
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+### 5. PausableToken.sol
+- A basic token contract with **pause/unpause** functionality.
+- Demonstrates modifiers, ownership, and restricted actions.
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+### 6. Twitter.sol
+- Mini Twitter-like contract.
+- Features:
+  - Create Tweet (max 280 characters)
+  - Like & Unlike a Tweet
+  - Fetch tweets by ID or by user
+
+---
+
+## 🛠️ Tools & Technologies
+- **Solidity** ^0.8.0  
+- **Remix IDE**  
+- **MetaMask** (for testnet deployment)  
+
+---
+
+## 📸 Demo
+*You can add screenshots of Remix IDE deployments or transaction logs here to make it more visual.*
+
+---
+
+## 📌 Next Steps
+- Build a simple frontend (React + Ethers.js) to interact with these contracts.
+- Deploy them on a testnet (e.g., Goerli or Sepolia) for live testing.
+- Add more advanced contracts such as ERC20/721 tokens.
+
+---
+
+## 📜 License
+This project is licensed under the MIT License.
