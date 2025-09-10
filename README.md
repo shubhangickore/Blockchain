@@ -27,12 +27,6 @@ Each contract demonstrates a core concept in Ethereum smart contract development
 
 ---
 
-## 📸 Demo
-
-*Add screenshots of Remix IDE deployments or transaction logs here to make this section more visual!*
-
----
-
 ## 📌 Next Steps
 
 - [ ] Build a simple frontend (React + Ethers.js) to interact with these contracts.
